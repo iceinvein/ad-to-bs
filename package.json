@@ -1,48 +1,54 @@
 {
-	"name": "ad-to-bs",
-	"version": "0.1.0",
-	"description": "Convert between Gregorian (AD) and Nepali (BS) calendars",
-	"type": "module",
-	"main": "./dist/index.js",
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": "./dist/index.js"
-		}
-	},
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "tsc",
-		"test": "vitest",
-		"test:run": "vitest run",
-		"lint": "biome check --write ."
-	},
-	"keywords": [
-		"calendar",
-		"nepali",
-		"gregorian",
-		"converter",
-		"ad-to-bs",
-		"bikram-sambat"
-	],
-	"author": "Dik Rana <dikrana@msn.com>",
-	"repository": {
-		"directory": "https://github.com/iceinvein/ad-to-bs",
-		"type": "git",
-		"url": "https://github.com/iceinvein/ad-to-bs.git"
-	},
-	"license": "MIT",
-	"devDependencies": {
-		"@types/bun": "latest",
-		"@vitest/ui": "^1.0.0",
-		"typescript": "^5.3.0",
-		"vitest": "^1.0.0",
-		"@biomejs/biome": "^2.2.6"
-	},
-	"dependencies": {
-	}
+  "name": "ad-to-bs",
+  "version": "0.1.1",
+  "description": "Convert between Gregorian (AD) and Nepali (BS) calendars",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "biome check --write .",
+    "version:major": "bun scripts/version.ts major",
+    "version:minor": "bun scripts/version.ts minor",
+    "version:patch": "bun scripts/version.ts patch",
+    "version": "bun scripts/version.ts",
+    "prepublishOnly": "bun run build && bun run test:run",
+    "publish": "npm publish",
+    "publish:dry": "npm publish --dry-run"
+  },
+  "keywords": [
+    "calendar",
+    "nepali",
+    "gregorian",
+    "converter",
+    "ad-to-bs",
+    "bikram-sambat"
+  ],
+  "author": "Dik Rana <dikrana@msn.com>",
+  "repository": {
+    "directory": "https://github.com/iceinvein/ad-to-bs",
+    "type": "git",
+    "url": "https://github.com/iceinvein/ad-to-bs.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@vitest/ui": "^1.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "@biomejs/biome": "^2.2.6"
+  },
+  "dependencies": {}
 }
