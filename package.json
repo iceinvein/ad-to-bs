@@ -31,9 +31,9 @@
 	],
 	"author": "Dik Rana <dikrana@msn.com>",
   "repository": {
-    "directory": "",
+    "directory": "https://github.com/iceinvein/ad-to-bs",
     "type": "git",
-    "url": ""
+    "url": "https://github.com/iceinvein/ad-to-bs.git"
   },
 	"license": "MIT",
 	"devDependencies": {
