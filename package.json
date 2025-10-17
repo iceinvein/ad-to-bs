@@ -30,19 +30,19 @@
 		"bikram-sambat"
 	],
 	"author": "Dik Rana <dikrana@msn.com>",
-  "repository": {
-    "directory": "https://github.com/iceinvein/ad-to-bs",
-    "type": "git",
-    "url": "https://github.com/iceinvein/ad-to-bs.git"
-  },
+	"repository": {
+		"directory": "https://github.com/iceinvein/ad-to-bs",
+		"type": "git",
+		"url": "https://github.com/iceinvein/ad-to-bs.git"
+	},
 	"license": "MIT",
 	"devDependencies": {
 		"@types/bun": "latest",
 		"@vitest/ui": "^1.0.0",
 		"typescript": "^5.3.0",
-		"vitest": "^1.0.0"
+		"vitest": "^1.0.0",
+		"@biomejs/biome": "^2.2.6"
 	},
 	"dependencies": {
-		"@biomejs/biome": "^2.2.6"
 	}
 }

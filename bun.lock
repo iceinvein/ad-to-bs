@@ -3,10 +3,8 @@
   "workspaces": {
     "": {
       "name": "ad-to-bs",
-      "dependencies": {
-        "@biomejs/biome": "^2.2.6",
-      },
       "devDependencies": {
+        "@biomejs/biome": "^2.2.6",
         "@types/bun": "latest",
         "@vitest/ui": "^1.0.0",
         "typescript": "^5.3.0",
